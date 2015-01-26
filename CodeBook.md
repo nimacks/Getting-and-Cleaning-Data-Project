@@ -28,6 +28,23 @@ The following files are available for the train and test data. Their description
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
+The script also appropriately labels the data set with descriptive names: all feature names (attributes) and activity names are converted to lower case, underscores and brackets () are removed. Then it merges the 10299x66 data frame containing features with 10299x1 data frames containing activity labels and subject IDs. The result is saved as merged_clean_data.txt, a 10299x68 data frame such that the first column contains subject IDs, the second column activity names, and the last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. The names of the attributes are similar to the following:
+
+tbodyacc-mean-x 
+
+tbodyacc-mean-y 
+
+tbodyacc-mean-z 
+
+tbodyacc-std-x 
+
+tbodyacc-std-y 
+
+tbodyacc-std-z 
+
+tgravityacc-mean-x 
+
+tgravityacc-mean-y
 
 ## Transformation details
 
